@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Loved+by+the+King&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- heading & logo -->
+    <header>
+         <h1 class="logo">Xavier Ritch</h1>
+         <h3 class="description">Software Engineer</h3>
+   </header>
+
+    <!-- main page body start-->
+    <div class="main">
+        <article>
+            <!-- intro section -->
+            <div class="intro">
+                <img id="portrait" src="img\portrait.png" alt="">
+                <h2>Hi! I'm Xavier</h2>
+                <p>I'm a software engineer based in Miami, Fl</p>
+                <p>As an entrepreneur, I'm interested in:</p>
+                <ul>
+                    <li>Building awesome projects from the ground up</li>
+                    <li>Making sure my clients are fully satisfied</li>
+                    <li>Innovating and experimenting with new ideas</li>
+                </ul>
+                <p>Please have a look around and feel free to Contact!</p>
+            </div>
+
+            <hr>
+            <!-- about section -->
+            <div class="about">
+                <h2>About Me</h2>
+                <p>I've always had a passion for tech. From building custom pc's in my youth to running a business deploying surveillance equipment after college, cutting edge technology has been where my heart is.</p>    
+                <p>More recently, however, I've gravitated towards the software end of things and fell in love with the world of web development. Stacks such as HTML, CSS, Javascript, React, Express, Node, and databases such as MongoDb and SQL are within my ever expanding wheelhouse.</p>     
+                <p>As a new dev, I'm eager, and thanks to <a href ="http://www.thinkful.com " target="_blank">Thinkful</a>, able to deliver quality software and web applications. I'm looking forward to working with future clients and collaborators on exciting and challenging new projects.</p>
+            </div>
+
+            <hr>
+            <!-- contact me section -->
+            <div class="contact">
+                <h2>Contact Xavier</h2>
+                <p>Let's work! Feel free to contact me below and check out my profiles on social media:</p>
+                <ol>
+                    <li><a href="https://www.linkedin.com/in/xavier-ritch-254238145/" target="_blank"> LinkedIn </a></li>
+                    <li><a href="https://github.com/MrXavi3r" target="_blank"> GitHub </a></li>
+                </ol>
+            </div>
+
+            <!-- Google map marker does not work because I have no API key, but I included it anyway -->
+            <h3>Google Maps</h3>
+            <div id="map"></div>
+
+            </article>
+        </div>
+
+    <!-- Copyright footer -->
+    <footer>
+        <h3 class="foot-description"> &copy;2020 Xavier Ritch </h3>
+    </footer>
+    
+    <script src="index.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+</body>
+
+</html>

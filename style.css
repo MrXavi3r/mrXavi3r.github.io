@@ -1,0 +1,73 @@
+
+/* centers and contains all content within age  */
+body {
+    background-color: #e7e0dd;
+    margin-top: 0;
+}
+
+/* styles header background */
+header {
+    height: 100px;
+    background-color: #77dffa;
+    margin-top: 0;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+/* Name h1 styling */
+.logo {
+    color: #b40404;
+    font-family: 'Rock Salt', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+}
+
+/* moves title software engineer within header */
+.description {
+    margin: 8px;
+}
+
+/* targets main content  */
+.main {
+    max-width: 600px;
+    margin: auto;
+    font-family: 'Loved by the King', cursive;
+    font-size: 25px;
+}
+
+/* centers all text for sub headers */
+h2, h3 {
+    text-align: center;
+}
+
+/* styles image */
+#portrait {
+    max-width: 600px;
+    max-height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   /* google map marker */
+   #map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+  }
+
+/* footer styles  */
+footer {
+    height: 50px;
+    background-color:#b50404;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* vertically centers content in footer */
+.foot-description {
+    padding-top: 10px;
+}
+
