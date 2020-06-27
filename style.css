@@ -1,14 +1,14 @@
 
 /* centers and contains all content within age  */
 body {
-    background-color: #e7e0dd;
+    background-color: #ebf4ff;
     margin-top: 0;
 }
 
 /* styles header background */
 header {
     height: 100px;
-    background-color: #77dffa;
+    background-color: #5e65ab;
     margin-top: 0;
     margin-bottom: 50px;
     width: 100%;
@@ -16,7 +16,7 @@ header {
 
 /* Name h1 styling */
 .logo {
-    color: #b40404;
+    color: red;
     font-family: 'Rock Salt', cursive;
     font-size: 50px;
     text-align: center;
@@ -61,7 +61,7 @@ h2, h3 {
 /* footer styles  */
 footer {
     height: 50px;
-    background-color:#b50404;
+    background-color: #f092b6;
     padding: 0;
     margin-top: 20px;
 }
@@ -71,3 +71,22 @@ footer {
     padding-top: 10px;
 }
 
+/* unvisited link */
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: purple;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
