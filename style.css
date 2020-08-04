@@ -3,15 +3,38 @@
 body {
     background-color: #ebf4ff;
     margin-top: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 /* styles header background */
 header {
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
     background-color: #5e65ab;
     margin-top: 0;
     margin-bottom: 50px;
     width: 100%;
+}
+
+#nav {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  justify-content: space-evenly;
+}
+
+#nav li a {
+  color: #f092b6;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#nav li a:hover {
+  color: aqua;
 }
 
 /* Name h1 styling */
@@ -27,6 +50,8 @@ header {
 /* moves title software engineer within header */
 .description {
     margin: 8px;
+    padding-top: 15px;
+    font-size: 25px;
 }
 
 /* targets main content  */
@@ -51,28 +76,64 @@ h2, h3 {
     margin-right: auto;
    }
 
+  #form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #user-name, #email-input, #text-area {
+    width: 80%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #submit-button {
+    background-color: #f092b6;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: wavy;
+    width: 200px;
+    max-width: 350px;
+    margin: 0 auto;
+    border-top: 20px;
+  }
+
+  /* social media icons */
+  #socials {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 50px;
+  }
+
    /* google map marker */
    #map {
-    width: 100%;
-    height: 400px;
+    width: 80%;
+    height: 200px;
     background-color: grey;
-  }
+    margin: auto;
+   }
 
 /* footer styles  */
 footer {
+    display: flex;
     height: 50px;
     background-color: #f092b6;
     padding: 0;
     margin-top: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 /* vertically centers content in footer */
 .foot-description {
-    padding-top: 10px;
+    margin: 0;
 }
 
-/* unvisited link */
-a:link {
+   a:link {
     color: red;
   }
   
@@ -89,4 +150,24 @@ a:link {
   /* selected link */
   a:active {
     color: blue;
+  }
+
+  /* mobile styles */
+  @media all and (max-width: 800px) {
+    body {
+      width: 100%;
+    }
+    #portrait {
+      max-width: 100%;
+      height: auto;
+    }
+    #nav li a {
+      font-size: 18px;
+    }
+    #nav li a:hover {
+      cursor: none;
+    }
+    article {
+      margin: 0 8px;
+    }
   }
