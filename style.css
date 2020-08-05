@@ -76,6 +76,16 @@ h2, h3 {
     margin-right: auto;
    }
 
+   .grid {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   #grid1:hover, #grid2:hover, #grid3:hover, #grid2:hover {
+    cursor: pointer;
+   }
+
   #form {
     display: flex;
     flex-direction: column;
@@ -157,6 +167,14 @@ footer {
     body {
       width: 100%;
     }
+    header {
+      width: 566px;
+    }
+
+    footer {
+      width: 566px;
+    }
+
     #portrait {
       max-width: 100%;
       height: auto;
