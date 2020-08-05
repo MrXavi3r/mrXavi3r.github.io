@@ -5,6 +5,7 @@ body {
     margin-top: 0;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 /* styles header background */
@@ -86,6 +87,10 @@ h2, h3 {
     cursor: pointer;
    }
 
+   .project-description {
+     color: #f092b6;
+   }
+
   #form {
     display: flex;
     flex-direction: column;
@@ -165,14 +170,14 @@ footer {
   /* mobile styles */
   @media all and (max-width: 800px) {
     body {
-      width: 100%;
+      width: 100vh;
     }
     header {
-      width: 566px;
+      width: 100%;
     }
 
     footer {
-      width: 566px;
+      width: 100%;
     }
 
     #portrait {
