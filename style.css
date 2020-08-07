@@ -1,4 +1,7 @@
-
+html, body {
+  width: 100%;
+  margin: 0;
+}
 /* centers and contains all content within age  */
 body {
     background-color: #ebf4ff;
@@ -19,6 +22,7 @@ header {
     width: 100%;
 }
 
+ /* navigation styles */
 #nav {
   list-style: none;
   display: flex;
@@ -57,7 +61,7 @@ header {
 
 /* targets main content  */
 .main {
-    max-width: 600px;
+    max-width: 100%;
     margin: auto;
     font-family: 'Loved by the King', cursive;
     font-size: 25px;
@@ -170,10 +174,25 @@ footer {
   /* mobile styles */
   @media all and (max-width: 800px) {
     body {
-      width: 100vh;
+      width: 100vw;
     }
+
+    #intro, #projects, #contact, #about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     header {
       width: 100%;
+    }
+
+    .main {
+      padding: 0 15px;
+    }
+
+    .grid {
+      flex-direction: column;
     }
 
     footer {
