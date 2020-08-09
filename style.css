@@ -2,13 +2,13 @@ html, body {
   width: 100%;
   margin: 0;
 }
+
 /* centers and contains all content within age  */
 body {
-    background-color: #ebf4ff;
+    background-color: #ffff;
     margin-top: 0;
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 /* styles header background */
@@ -16,8 +16,7 @@ header {
     display: flex;
     flex-direction: column;
     min-height: 100px;
-    background-color: #5e65ab;
-    margin-top: 0;
+    background-color: #3b5998;
     margin-bottom: 50px;
     width: 100%;
 }
@@ -31,7 +30,7 @@ header {
 }
 
 #nav li a {
-  color: #f092b6;
+  color: #ffff;
   font-size: 1.5rem;
   text-decoration: none;
   padding-left: 10px;
@@ -44,7 +43,7 @@ header {
 
 /* Name h1 styling */
 .logo {
-    color: red;
+    color: #ffff;
     font-family: 'Rock Salt', cursive;
     font-size: 50px;
     text-align: center;
@@ -63,8 +62,15 @@ header {
 .main {
     max-width: 100%;
     margin: auto;
-    font-family: 'Loved by the King', cursive;
     font-size: 25px;
+    padding: 0 15px;
+}
+
+/* centers all content */
+#intro, #projects, #contact, #about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* centers all text for sub headers */
@@ -92,7 +98,7 @@ h2, h3 {
    }
 
    .project-description {
-     color: #f092b6;
+     color:#3b5998;
    }
 
   #form {
@@ -108,12 +114,12 @@ h2, h3 {
   }
 
   #submit-button {
-    background-color: #f092b6;
+    background-color: #3b5998;
     border-radius: 10px;
+    color: white;
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
-    text-decoration: wavy;
     width: 200px;
     max-width: 350px;
     margin: 0 auto;
@@ -122,10 +128,12 @@ h2, h3 {
 
   /* social media icons */
   #socials {
+    width: 500px;
     display: flex;
-    list-style: none;
     justify-content: space-around;
+    list-style: none;
     font-size: 50px;
+    padding-left: 0;
   }
 
    /* google map marker */
@@ -140,7 +148,8 @@ h2, h3 {
 footer {
     display: flex;
     height: 50px;
-    background-color: #f092b6;
+    background-color: #3b5998;
+    color: white;
     padding: 0;
     margin-top: 20px;
     align-items: center;
@@ -153,17 +162,16 @@ footer {
 }
 
    a:link {
-    color: red;
+    color: #3b5998;
   }
-  
-  /* visited link */
+
   a:visited {
     color: purple;
   }
   
   /* mouse over link */
   a:hover {
-    color: hotpink;
+    color: #dfe3ee;
   }
   
   /* selected link */
@@ -173,14 +181,15 @@ footer {
 
   /* mobile styles */
   @media all and (max-width: 800px) {
-    body {
-      width: 100vw;
+    html, body {
+      width: 100%;
     }
 
     #intro, #projects, #contact, #about {
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
     }
 
     header {
@@ -193,6 +202,12 @@ footer {
 
     .grid {
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #socials {
+      width: 320px;
     }
 
     footer {
