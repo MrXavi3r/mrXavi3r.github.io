@@ -139,6 +139,12 @@ h2, h3 {
     border-top: 20px;
   }
 
+  /* label placement */
+  #form label {
+    display: flex;
+    justify-content: center;
+  }
+
   /* social media icons */
   #socials {
     width: 500px;
@@ -150,12 +156,12 @@ h2, h3 {
   }
 
    /* google map marker */
-   #map {
+   /* #map {
     width: 80%;
     height: 200px;
     background-color: grey;
     margin: auto;
-   }
+   } */
 
 /* footer styles  */
 footer {
@@ -210,7 +216,7 @@ footer {
     }
 
     .main {
-      margin: 0 15px;
+      margin: 0 10px;
     }
 
     .grid {

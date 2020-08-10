@@ -117,37 +117,32 @@
           Feel free to contact me and check out my profiles on social media:
         </p>
         <form id="form" action="https://formspree.io/xwkrywaq" method="POST">
-          <!-- <label for="user-name">Name</label> -->
-          <input id="user-name" type="text" name="name" placeholder="Name" required />
-          <!-- <label for="email-input">Email Address</label> -->
-          <input id="email-input" type="email" name="_replyto" placeholder="Email Address" required />
-          <!-- <label for="text-area">Message</label> -->
-          <textarea id="text-area" name="message" cols="40" rows="4" placeholder="Message" maxlength="200" required></textarea>
+          <label for="user-name">Name</label>
+          <input id="user-name" type="text" name="name" required />
+          <label for="email-input">Email</label>
+          <input id="email-input" type="email" name="_replyto" required />
+          <label for="text-area">Message</label>
+          <textarea id="text-area" name="message" cols="40" rows="4" maxlength="200" required></textarea>
           <input id="submit-button" type="submit" value="Send" />
         </form>
         <ol id="socials">
           <li>
-            <a href="https://www.linkedin.com/in/xavier-ritch-254238145/" target="_blank">
+            <a href="https://www.linkedin.com/in/xavier-ritch-254238145/" target="_blank" aria-label="LinkedIn">
               <i class="fab fa-linkedin"></i>
             </a>
           </li>
           <li>
-            <a href="https://github.com/MrXavi3r" target="_blank"><i class="fab fa-github"></i>
+            <a href="https://github.com/MrXavi3r" target="_blank" aria-label="Github"><i class="fab fa-github"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/mrxavi3r/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.instagram.com/mrxavi3r/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram-square"></i></a>
           </li>
           <li>
-            <a href="mailto:xritch89@hotmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
+            <a href="mailto:xritch89@hotmail.com" target="_blank" aria-label="Mail"><i class="fas fa-envelope-square"></i></a>
           </li>
         </ol>
       </div>
-
-      <!-- <hr/> -->
-      <!-- Google map marker does not work because I have no API key(yet), but I included it anyway -->
-      <!-- <h3>Google Maps (Coming Soon)</h3>
-      <div id="map"></div> -->
     </article>
   </div>
 
@@ -157,7 +152,7 @@
   </footer>
 
   <script src="index.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script> -->
 </body>
 
 </html>
